@@ -1,0 +1,7 @@
+---
+- hosts: irc
+  remote_user: muz
+  sudo: yes
+  tasks:
+    - name: ensure weechat installed
+      apt: pkg=weechat state=latest
